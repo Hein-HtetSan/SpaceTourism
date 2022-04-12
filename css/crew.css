@@ -142,7 +142,7 @@ div.activeone{
         background-size: cover;
     }
     .height-of-navbar{
-        height: 60px;
+        height: 20vh;
     }
     .img-logo{
         transform: scale(.7);
