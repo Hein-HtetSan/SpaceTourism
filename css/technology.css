@@ -96,6 +96,7 @@ aside{
     font-size: 30px;
     font-weight: 200;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .crew-prefix > span {
     font-weight: bold;
@@ -106,9 +107,13 @@ aside{
 }
 .content-head{
     font-weight: 100;
+    text-transform: uppercase;
+}
+.content-name{
+    text-transform: uppercase;
 }
 .png{
-    transform: scale(.9);
+    transform: scale(.8);
 }
 .num1, .num2, .num3{
     padding: 10px 20px 10px 20px;
@@ -119,14 +124,14 @@ aside{
     border-radius: 50%;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: .2s ease-in;
+    transition: .4s ease-in;
 }
 .num1:hover, .num2:hover, .num3:hover{
     background-color:#fff;
     color: #000;
     font-weight: bold;
 }
-.num1.activeClass{
+.num1.activeClass, .num2.activeClass, .num3.activeClass{
     background-color:#fff;
     color: #000;
     font-weight: bold;
