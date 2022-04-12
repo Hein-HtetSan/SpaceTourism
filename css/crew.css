@@ -1,0 +1,270 @@
+:root{
+    --primary-color: #fff;
+    --secondary-color: #b4b3b3;
+    --gray-color: #bebebe;
+    --navbar-background-color: rgba(255,255,255,0.1);
+    --sidebar-background-color: rgba(10, 15, 82, 0.4);
+    --primary-font-family: "Roboto", sans-serif;
+    --secondary-font-family: "Open-sans", sans-serif;
+}
+
+.crew-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./starter-code/assets/crew/background-crew-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn{
+    display:none;
+}
+
+.img-logo{
+    padding-left: 30%;
+}
+.height-of-navbar{
+    height: 20vh;
+}
+.my-navbar ul{
+    width: 75vw;
+    height: 80px;
+    background-color: var(--navbar-background-color);
+    backdrop-filter: blur(5px);
+}
+.my-navbar ul li{
+    list-style: none;
+}
+.my-navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: var(--secondary-font-family);
+    font-size: 18px;
+    color: var(--gray-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    transform-origin: left;
+    transition: .5s ease;
+}
+.my-navbar ul li a::before{
+    content: '';
+    position: absolute;
+    top: 44px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition:.5s ease-in-out;
+    border-radius: 5px;
+}
+.my-navbar ul li a:hover{
+    color: var(--primary-color);
+}
+.my-navbar ul li a:hover::before{
+    width: 100%;
+}
+.my-navbar ul li a.activeClass{
+    color: var(--primary-color);
+}
+.my-navbar ul li a.activeClass::before{
+    width: 100%;
+}
+.span{
+    font-family: var(--primary-font-family);
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--secondary-color);
+    opacity: .5;
+}
+
+aside{
+    display: none;
+}
+
+.height-auto{
+    height: 80vh;
+}
+
+.btn{
+    display: none;
+}
+.btn-bars{
+    visibility: hidden;
+}
+.png{
+    transform: scale(.6);
+}
+.indicator-btns{
+    position: relative;
+    left: 180px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn1, .btn2, .btn3, .btn4{
+    padding: 2px 15px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: .4s ease;
+}
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
+    background: rgba(255,255,255,0.3);
+}
+div.activeone{
+    background-color: #fff;
+}
+.crew-prefix{
+    font-family: var(--primary-font-family);
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.crew-prefix > span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.content-head{
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 576px) {
+    .destination-page{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./starter-code/assets/crew/background-crew-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .height-of-navbar{
+        height: 60px;
+    }
+    .img-logo{
+        transform: scale(.7);
+        padding-left: 10%;
+    }
+    .my-navbar{
+        display: none;
+    }
+    .btn{
+        display: inline-block;
+    }
+    .btn-bars{
+        display: inline-block;
+        color:var(--secondary-color);
+        font-size: 20px;
+    }
+    .btn-bars:hover{
+        color: var(--primary-color);
+    }
+    .aside{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 100vh;
+        background-color: var(--sidebar-background-color);
+        backdrop-filter: blur(5px);
+        overflow: hidden;
+        transition: .5s ease-in;
+    }
+    .aside.show-aside{
+        width: 200px;
+    }
+    .sidebar-navbar{
+        position: absolute;
+        left:0;
+        top: 25%;
+        display:flex;
+        flex-direction: column;
+    }
+    .sidebar-navbar li{
+        display: block;
+        padding: 20px 50px;
+        list-style: none;
+        transition: .5s ease-in;
+    }
+    .sidebar-navbar li:hover{
+        background-color: var(--navbar-background-color);
+        backdrop-filter: blur(5px);
+        padding: 20px 60px;
+    }
+    .sidebar-navbar li.activeSidebarItem{
+        background-color: var(--navbar-background-color);
+        backdrop-filter: blur(5px);
+        padding: 20px 60px;
+    }
+    .sidebar-navbar li a{
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-family: var(--secondary-font-family);
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        display: grid;
+        place-items: end;
+    }
+    .fa-times{
+        padding-right: 20px;
+        font-size: 20px;
+        color: var(--secondary-color);
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    .fa-times:hover{
+        color: var(--primary-color);
+        transform: scale(1.1);
+    }
+    .btn-bars{
+        visibility: visible;
+    }
+    .height-auto{
+        height: 40vh;
+    }
+    .png{
+        transform: scale(.5);
+    }
+    .crew-prefix{
+        font-size: 15px;
+    }
+    .content-head{
+        font-size: 15px;
+    }
+    .content-name{
+        font-size: 20px;
+
+    }
+    .content-info{
+        font-size: 15px;
+    }
+    .indicator-btns{
+    position: relative;
+    left: 0px;
+    width: 50px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn1, .btn2, .btn3, .btn4{
+    padding: 2px 10px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: .4s ease;
+}
+}
