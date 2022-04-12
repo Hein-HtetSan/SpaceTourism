@@ -163,6 +163,7 @@ div.activeone{
         color: var(--primary-color);
     }
     .aside{
+        z-index: 999;
         display: block;
         position: absolute;
         top: 0;
