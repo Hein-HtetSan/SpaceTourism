@@ -130,7 +130,9 @@ div.activeone{
 .content-head{
     font-weight: 100;
 }
-
+.next-prev-btn{
+    display: none;
+}
 
 @media screen and (max-width: 576px) {
     .crew-page{

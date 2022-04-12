@@ -36,7 +36,7 @@
                 <h2 class="text-light header-text">
                     <span>01</span>Pick Your Destination
                 </h2>
-                <img class="png" src="./starter-code/assets/destination/image-moon.png" alt="Moon">
+                <img class="png img-fluid" src="./starter-code/assets/destination/image-moon.png" alt="Moon">
             </div>
             <div class="col-12 col-md-12 col-lg-6 height-auto d-flex justify-content-center align-items-center p-5">
                 <div class="destination-content text-light">
@@ -100,5 +100,18 @@
     <script src="./Navbar.js"></script>
     <script src="./js/Sidebar.js"></script>
     <script src="./js/destination.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+			reset: true,
+			duration: 2500,
+			delay: 400
+			});
+            ScrollReveal().reveal('.header-text', {delay: 500, origin: 'left',distance: '50px'});
+            ScrollReveal().reveal('.btns', {delay: 600, origin: 'top', distance: '50px', interval: 200});
+            ScrollReveal().reveal('.btn1-1', {delay: 600, origin: 'top', distance: '50px', interval: 200});
+            ScrollReveal().reveal('.content-head, .content-info, .distance-header, .distance-info, .time-header, .time-info', {delay: 800, origin: 'right', distance: '50px'});
+            ScrollReveal().reveal('.img-fluid', {delay: 600, origin: 'top', distance: '10px'});
+    </script>
 </body>
 </html>

@@ -87,5 +87,19 @@
     <script src="./Navbar.js"></script>
     <script src="./js/Sidebar.js"></script>
     <script src="./js/crew.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+			reset: true,
+			duration: 2500,
+			delay: 400
+			});
+            ScrollReveal().reveal('.crew-prefix', {delay: 500, origin: 'left',distance: '50px'});
+            ScrollReveal().reveal('.content-head, .content-name', {delay: 600, origin: 'top', distance: '50px'});
+            ScrollReveal().reveal('.content-info', {delay: 700, origin: 'bottom', distance: '50px',});
+            ScrollReveal().reveal('.sub-btn', {delay: 800, origin: 'right', distance: '50px', interval: 300});
+            ScrollReveal().reveal('.prev-btn, .next-btn', {delay: 600, origin: 'top', distance: '10px', interval: 200});
+            ScrollReveal().reveal('.img-fluid', {delay: 600, origin: 'top', distance: '10px'});
+    </script>
 </body>
 </html>

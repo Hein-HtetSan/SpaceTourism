@@ -85,5 +85,18 @@
     <script src="./js/Navbar.js"></script>
     <script src="./js/Sidebar.js"></script>
     <script src="./js/technology.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+			reset: true,
+			duration: 2500,
+			delay: 400
+			});
+            ScrollReveal().reveal('.tech-prefix', {delay: 500, origin: 'left',distance: '50px'});
+            ScrollReveal().reveal('.content-head, .content-name', {delay: 600, origin: 'top', distance: '50px'});
+            ScrollReveal().reveal('.content-info', {delay: 700, origin: 'bottom', distance: '50px',});
+            ScrollReveal().reveal('.btns', {delay: 800, origin: 'left', distance: '50px', interval: 500});
+            ScrollReveal().reveal('.img-fluid', {delay: 600, origin: 'top', distance: '10px', interval: 200});
+    </script>
 </body>
 </html>
