@@ -1,21 +1,14 @@
-var activeLinks = document.querySelectorAll(".indicator-btns div")
-activeLinks.forEach(div => {
-    div.addEventListener('click', () => {
-        resetLinks();
-        div.classList.add("activeone");
-    })
-})
-function resetLinks() {
-    activeLinks.forEach(div => {
-        div.classList.remove('activeone')
-    })
-}
+
 
 const img = document.querySelector(".png")
 const head = document.querySelector(".content-head")
 const names = document.querySelector(".content-name")
 const info = document.querySelector(".content-info")
 const btnsofperson = document.querySelectorAll(".sub-btn")
+
+const btn1_1 = document.querySelectorAll(".btn1-1")
+const prevBtn = document.querySelector(".prev-btn")
+const nextBtn = document.querySelector(".next-btn")
 
 let items = [
     {
@@ -44,6 +37,18 @@ let items = [
     },
 ]
 let currentItem = 0;
+
+var activeLinks = document.querySelectorAll(".indicator-btns div")
+function btnfuntion() {
+    activeLinks.forEach(div => {
+        div.addEventListener('click', () => {
+            resetLinks();
+            div.classList.add("activeone");
+        })
+    })
+}
+
+
 window.addEventListener("DOMcontentloaded", function() {
     console.log("working...")
     showPerson()
@@ -67,6 +72,28 @@ btnsofperson.forEach(function(btn){
         }
     })
 })
+
+nextBtn.addEventListener('click', function() {
+    currentItem++;
+    if(currentItem > items.length - 1) {
+        currentItem =0;
+    }
+    showPerson();
+}) 
+prevBtn.addEventListener('click', function() {
+    currentItem--;
+    if(currentItem < 0) {
+        currentItem =  items.length - 1;
+    }
+    showPerson();
+})
+
+
+function resetLinks() {
+    activeLinks.forEach(div => {
+        div.classList.remove('activeone')
+    })
+}
 
 
 function showPerson() {
