@@ -236,6 +236,7 @@ div.activeone{
         height: 40vh;
     }
     .png{
+        z-index: 888;
         transform: scale(.65);
     }
     .crew-prefix{
