@@ -94,7 +94,7 @@ aside{
 
 
 @media screen and (max-width: 576px) {
-    .destination-page{
+    .technology-page{
         width: 100%;
         height: 100vh;
         background-image: url("../starter-code/assets/technology/background-technology-mobile.jpg");
