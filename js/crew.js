@@ -1,4 +1,16 @@
+var activeLinks = document.querySelectorAll(".indicator-btns div")
 
+    activeLinks.forEach(div => {
+        div.addEventListener('click', () => {
+            resetLinks();
+            div.classList.add("activeone");
+        })
+    })
+function resetLinks() {
+    activeLinks.forEach(div => {
+        div.classList.remove('activeone')
+    })
+}
 
 const img = document.querySelector(".png")
 const head = document.querySelector(".content-head")
@@ -38,15 +50,7 @@ let items = [
 ]
 let currentItem = 0;
 
-var activeLinks = document.querySelectorAll(".indicator-btns div")
-function btnfuntion() {
-    activeLinks.forEach(div => {
-        div.addEventListener('click', () => {
-            resetLinks();
-            div.classList.add("activeone");
-        })
-    })
-}
+
 
 
 window.addEventListener("DOMcontentloaded", function() {
@@ -89,11 +93,7 @@ prevBtn.addEventListener('click', function() {
 })
 
 
-function resetLinks() {
-    activeLinks.forEach(div => {
-        div.classList.remove('activeone')
-    })
-}
+
 
 
 function showPerson() {
