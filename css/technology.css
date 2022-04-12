@@ -261,6 +261,9 @@ aside{
         font-size: 18px;
         font-weight: 100;
     }
+    .png{
+        transform: scale(.7);
+    }
     .num1, .num2, .num3{
         padding: 5px 15px 5px 15px;
         font-family: var(--primary-font-family);
