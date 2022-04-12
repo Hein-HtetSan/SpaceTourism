@@ -11,7 +11,7 @@
 .destination-page{
     width: 100%;
     height: 100vh;
-    background-image: url(./starter-code/assets/destination/background-destination-desktop.jpg);
+    background-image: url(/starter-code/assets/destination/background-technology-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +97,7 @@ aside{
     .destination-page{
         width: 100%;
         height: 100vh;
-        background-image: url(./starter-code/assets/destination/background-destination-mobile.jpg);
+        background-image: url(/starter-code/assets/destination/background-technology-mobile.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
