@@ -269,9 +269,9 @@ div.activeone{
     position: absolute;
     top: 65%;
     left: 10px;
-    font-size: 20px;
-    color: #000;
-    background-color: var(--gray-color);
+    font-size: 30px;
+    color: #fff;
+    background-color: none;
     padding: 10px;
     cursor: pointer;
     transition: .3s;
@@ -281,9 +281,9 @@ div.activeone{
     position: absolute;
     top: 65%;
     right: 10px;
-    font-size: 20px;
-    color: #000;
-    background-color: var(--gray-color);
+    font-size: 30px;
+    color: #fff;
+    background-color: none;
     padding: 10px;
     cursor: pointer;
     transition: .3s;
